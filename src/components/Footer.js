@@ -1,23 +1,35 @@
-import React from 'react'
+import React from 'react';
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import * as CgIcons from "react-icons/cg";
 
-import styled from 'styled-components';
-
-const StyleFooter = styled.footer`
-    background: #0F3317;
-    height: 10vh;
-    min-width: 120px;
-    align-items: center;
-    text-align: center;
-    text-shadow: #000 0 0 .2em;
-    padding: 10px;
-    color: white;
-`;
+import {Container,Row,Col} from 'react-bootstrap';
+import './../App.css'
 
 function Footer(){
     return(
-        <StyleFooter>
-            this is the footer
-        </StyleFooter>
+        <div className="bottom">
+            
+                <h2>Contact Us:  </h2>
+                <div className="PhoneNum">
+                <AiIcons.AiFillPhone size={30} className="PhoneIcon"/>
+                (631) 720-4949  
+                </div>
+                
+                <a className="emailAdd" href='mailto:lipaconsultingserv@gmail.com'>
+                <CgIcons.CgMail size={32}/>
+                lipaconsultingserv@gmail.com
+                </a>
+                
+                <a href="https://www.facebook.com/LipaConsulting/?ref=py_c" target='_blank'>
+                <FaIcons.FaFacebookSquare size={32} color='white'/>
+                </a>
+
+                <a href="https://www.instagram.com/lipaconsulting/" target='_blank'>
+                <AiIcons.AiFillInstagram size={39} color='white'/>
+                </a>
+                
+         </div>
     )
 }
 

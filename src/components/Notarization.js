@@ -1,9 +1,10 @@
 import React from 'react'
+import './Notarization.css'
 
 function Notarization(){
     return(
-        <div id="notarization">
-            this is notarization
+        <div >
+            <h1>Notarization</h1>
         </div>
     )
 }
