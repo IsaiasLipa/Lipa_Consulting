@@ -20,20 +20,21 @@ function App() {
   return (
     
     <div className="App" >
-      
-     <BrowserRouter>
-     <Header/>
-     <div className="mainSection">
-     <Switch>
+      <div className='other_content'>
+        <BrowserRouter>
+          <Header/>
+          <div className="mainSection">
+            <Switch>
             <Route path='/home' component={Home}/>
             <Route path='/notarization' component={Notarization}/>
             <Route path='/about' component={About}/>
             <Route path='/taxes' component={Taxes}/>
             <Route path='/immigration' component={Immigration}/>
             
-      </Switch>
+            </Switch>
+          </div>
+        </BrowserRouter>
       </div>
-      </BrowserRouter>
       
       <Footer/>
 
