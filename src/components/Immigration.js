@@ -1,9 +1,10 @@
 import React from 'react'
 import map from './../images/latin_america.jpg'
+import {motion} from 'framer-motion'
 
 function Immigration(){
     return(
-        <>
+        <motion.div initial ={{opacity: 0}} animate={{opacity: 1}} exit={{opacity:0}} className='mainSection'>
         <div className="section_text">
             <h1 >Immigration Services</h1>
             <br/>
@@ -28,7 +29,7 @@ function Immigration(){
                 <p>No legal advice will be offered. We don't do any representation with immigration officials.</p>
         </div>
         <img src={map} width='80%' height='auto'  className='image' alt='logo pic'/>
-        </>
+        </motion.div>
     )
 }
 

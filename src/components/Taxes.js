@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import IRS_logo from './../images/irs-logo.jpg'
 import captiol from './../images/313123.jpg'
-
+import {motion} from 'framer-motion'
 
 
 function Taxes(){
     return( 
-        <>
         
+        <motion.div initial ={{opacity: 0}} animate={{opacity: 1}} exit={{opacity:0}} className='mainSection'>
         <div className='section_text'>
         <h1>Taxes</h1>
         <br/>
@@ -33,7 +33,7 @@ function Taxes(){
             <p>Book Keeping starts at $120</p>
         </div>
         <img src={IRS_logo} width='100%' height='auto'  className='image' alt='logo pic'/>
-        </>
+        </motion.div>
         
         
     )

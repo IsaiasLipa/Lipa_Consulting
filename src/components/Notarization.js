@@ -1,10 +1,10 @@
 import React from 'react'
 import new_york from './../images/new_york_state.png'
-
+import {motion} from 'framer-motion'
 
 function Notarization(){
     return(
-        <>
+        <motion.div initial ={{opacity: 0}} animate={{opacity: 1}} exit={{opacity:0}} className='mainSection'>
         <div className='section_text'>
             <h1>Notarization</h1>
             <br/>
@@ -27,7 +27,7 @@ function Notarization(){
                 Document Notarization starts at $3 
             </div>
             <img src={new_york} width='100%' height='auto'  className='image' alt='logo pic'/>
-        </>
+        </motion.div>
     )
 }
 

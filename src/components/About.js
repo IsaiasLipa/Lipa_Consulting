@@ -1,9 +1,11 @@
 import React from 'react'
 import './../App.css'
 import stony_brook from './../images/stony_brook.png'
+import {motion} from 'framer-motion'
+
 function About(){
     return(
-        <>
+        <motion.div initial ={{opacity: 0}} animate={{opacity: 1}} exit={{opacity:0}} className='mainSection'>
         <div className="section_text">
             <h1>About Lipa Consulting</h1>
             <br/>
@@ -23,7 +25,7 @@ function About(){
             <br/>
         </div>
         <img src={stony_brook} width='100%' height='auto'  className='image' alt='logo pic'/>
-        </>
+        </motion.div>
     )
 }
 

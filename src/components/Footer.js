@@ -2,12 +2,13 @@ import React from 'react';
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as CgIcons from "react-icons/cg";
-
+import {motion} from 'framer-motion'
 
 import './../App.css'
 
 function Footer(){
     return(
+        <motion.div initial ={{opacity: 0}} animate={{opacity: 1}} exit={{opacity:0}} className='mainSection'>
         <div className="bottom">
             
                 <h2>Contact Us:  </h2>
@@ -30,6 +31,7 @@ function Footer(){
                 </a>
                 
          </div>
+         </motion.div>
     )
 }
 
