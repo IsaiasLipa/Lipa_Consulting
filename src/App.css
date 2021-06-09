@@ -11,10 +11,11 @@
 .App{
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 
 .mainSection{
-  /* height: 70vh; */
+  
   width: auto;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -109,6 +110,30 @@
   align-items: center;
   justify-content: center;
   align-content: center;
+  
+}
+.calendar{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  
+  width:600px;
+  height:700px;
+ 
+}
+.map{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width:5000px;
+  height:400px;
+  z-index: 100;
+  padding-left: 7vh;
   
 }
 

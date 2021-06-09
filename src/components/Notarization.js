@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 function Notarization(){
     return(
-        <motion.div initial ={{opacity: 0}} animate={{opacity: 1}} exit={{opacity:0}} className='mainSection'>
+        <motion.div initial ={{opacity: 0, x:"-100vw"}} animate={{opacity: 1, x:0}} exit={{opacity:0, x:"-100vw"}} className='mainSection'>
         <div className='section_text'>
             <h1>Notarization</h1>
             <br/>
@@ -24,6 +24,7 @@ function Notarization(){
                 <br/>
                 <p>We are also equipped and qualified to perform virtual notarizations as per Governor Cuomo’s Executive Order
                 </p>
+                <br/>
                 Document Notarization starts at $3 
             </div>
             <img src={new_york} width='100%' height='auto'  className='image' alt='logo pic'/>

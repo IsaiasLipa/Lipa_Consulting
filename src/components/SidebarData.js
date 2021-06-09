@@ -44,6 +44,13 @@ export const SidebarData = [
         icons: <FcIcons.FcInfo/>,
         cName: 'nav-text'
 
+    },
+    {
+        title:'Appointments',
+        path:'/appointment',
+        icons: <FcIcons.FcCalendar/>,
+        cName: 'nav-text'
+
     }
     
 ]

@@ -1,14 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+
 import IRS_logo from './../images/irs-logo.jpg'
-import captiol from './../images/313123.jpg'
+
 import {motion} from 'framer-motion'
 
 
 function Taxes(){
     return( 
         
-        <motion.div initial ={{opacity: 0}} animate={{opacity: 1}} exit={{opacity:0}} className='mainSection'>
+        <motion.div initial ={{opacity: 0, x:"-100vw"}} animate={{opacity: 1, x:0}} exit={{opacity:0, x:"-100vw"}} className='mainSection'>
         <div className='section_text'>
         <h1>Taxes</h1>
         <br/>

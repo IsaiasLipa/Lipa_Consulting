@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 function Immigration(){
     return(
-        <motion.div initial ={{opacity: 0}} animate={{opacity: 1}} exit={{opacity:0}} className='mainSection'>
+        <motion.div initial ={{opacity: 0, x:"-100vw"}} animate={{opacity: 1, x:0}} exit={{opacity:0, x:"-100vw"}} className='mainSection'>
         <div className="section_text">
             <h1 >Immigration Services</h1>
             <br/>

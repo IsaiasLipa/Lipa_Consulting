@@ -11,6 +11,8 @@ import Taxes from './components/Taxes'
 import Notarization from './components/Notarization'
 import Immigration from './components/Immigration'
 import Footer from './components/Footer'
+import Appointment from './components/Appointment'
+import {useState} from 'react'
 
 import './App.css'
 
@@ -27,17 +29,18 @@ function App() {
       <div className='other_content'>
         
           <Header/>
-          {/* <div className="mainSection"> */}
+          
             <AnimatePresence exitBeforeEnter>
               <Switch location={location} key={location.pathname}>
                 <Route path='/notarization' component={Notarization}/>
                 <Route path='/about' component={About}/>
                 <Route path='/taxes' component={Taxes}/>
                 <Route path='/immigration' component={Immigration}/>
+                <Route path='/appointment' component={Appointment}/>
                 <Route path='/' component={Home}/>
               </Switch>
             </AnimatePresence>
-          {/* </div> */}
+          
         
       </div>
       
