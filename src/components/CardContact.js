@@ -60,7 +60,7 @@ const Card_contact = (props) => {
                   </p>
                 </div>
               )}
-              <Button
+              {/* <Button
                 variant="outline-success"
                 onClick={openWhatsapp}
                 style={buttonStyle}
@@ -80,7 +80,7 @@ const Card_contact = (props) => {
                   <Whatsapp />
                 </div>
                 {props.language ? <a>See our Facebook</a> : <a>Ve nuestro Facebook</a>}
-              </Button>
+              </Button> */}
             </Col>
           </Row>
         </Card.Text>
