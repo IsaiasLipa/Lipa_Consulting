@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
-import { Whatsapp } from "react-bootstrap-icons";
+// import { Whatsapp } from "react-bootstrap-icons";
 import { Button } from "react-bootstrap";
 const Card_contact = (props) => {
   const openWhatsapp = () => {
@@ -61,13 +61,13 @@ const Card_contact = (props) => {
                   </p>
                 </div>
               )}
-              {/* <Button
+              <Button
                 variant="outline-success"
                 onClick={openWhatsapp}
                 style={buttonStyle}
               >
                 <div style={iconStyle}>
-                  <Whatsapp />
+                  
                 </div>
                 {props.language ? <a>Text our Whatsapp</a> : <a>Contactanos en Whatsapp</a>}
               </Button>
@@ -78,10 +78,10 @@ const Card_contact = (props) => {
                 style={buttonStyle}
               >
                 <div style={iconStyle}>
-                  <Whatsapp />
+                  
                 </div>
                 {props.language ? <a>See our Facebook</a> : <a>Ve nuestro Facebook</a>}
-              </Button> */}
+              </Button>
             </Col>
           </Row>
         </Card.Text>
