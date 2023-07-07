@@ -3,21 +3,21 @@ import { Card, Row, Col } from "react-bootstrap";
 // import { Whatsapp } from "react-bootstrap-icons";
 // import { Button } from "react-bootstrap";
 const Card_contact = (props) => {
-  // const openWhatsapp = () => {
-  //   window.open("https://wa.me/16317204949", "_blank");
-  // }
-  // const openFacebook = () => {
-  //   window.open("https://www.facebook.com/LipaConsulting", "_blank");
-  // }
-  // const buttonStyle = {
-  //   display: "flex",
-  //   alignItems: "center",
-  //   justifyContent: "center",
-  // };
+  const openWhatsapp = () => {
+    window.open("https://wa.me/16317204949", "_blank");
+  }
+  const openFacebook = () => {
+    window.open("https://www.facebook.com/LipaConsulting", "_blank");
+  }
+  const buttonStyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  };
 
-  // const iconStyle = {
-  //   marginRight: "5px",
-  // };
+  const iconStyle = {
+    marginRight: "5px",
+  };
   return (
     <Card className="m-4">
       <Card.Body>
