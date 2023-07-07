@@ -8,15 +8,8 @@ const Card_contact = (props) => {
   const openFacebook = () => {
     window.open("https://www.facebook.com/LipaConsulting", "_blank");
   }
-  const buttonStyle = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  };
 
-  const iconStyle = {
-    marginRight: "5px",
-  };
+  
   return (
     <Card className="m-4">
       <Card.Body>
@@ -63,29 +56,41 @@ const Card_contact = (props) => {
               <Button
                 variant="outline-success"
                 onClick={openWhatsapp}
-                style={buttonStyle}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "5px",
+                  textAlign: "center",
+                }}
               >
-                <div style={iconStyle}>
-                  <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                {props.language ? (
-                  <p>Text our Whatsapp</p>
-                ) : (
-                  <p>Contactanos en Whatsapp</p>
-                )}
+                <i class="fa-brands fa-whatsapp "></i>
+
+                <span>
+                  {props.language
+                    ? "Text our Whatsapp"
+                    : "Contactanos en Whatsapp"}
+                </span>
               </Button>
               <br />
               <Button
                 variant="outline-primary"
                 onClick={openFacebook}
-                style={buttonStyle}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "5px",
+                  textAlign: "center",
+                }}
               >
-                <div style={iconStyle}></div>
-                {props.language ? (
-                  <p>See our Facebook</p>
-                ) : (
-                  <p>Ve nuestro Facebook</p>
-                )}
+                <i class="fa-brands fa-facebook"></i>
+                <span>
+                  {props.language
+                    ? "See our Facebook"
+                    : "Ve nuestro Facebook"}
+                </span>
+                
               </Button>
             </Col>
           </Row>
