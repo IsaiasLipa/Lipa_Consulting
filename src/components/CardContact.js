@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
-import { Whatsapp } from "react-bootstrap-icons";
-import { Button } from "react-bootstrap";
+// import { Whatsapp } from "react-bootstrap-icons";
+// import { Button } from "react-bootstrap";
 const Card_contact = (props) => {
   // const openWhatsapp = () => {
   //   window.open("https://wa.me/16317204949", "_blank");
