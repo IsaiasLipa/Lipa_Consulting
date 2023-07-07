@@ -7,7 +7,7 @@ const Card_contact = (props) => {
     window.open("https://wa.me/16317204949", "_blank");
   }
   const openFacebook = () => {
-    window.open("https://www.facebook.com/LipaConsulting/", "_blank");
+    window.open("https://www.facebook.com/LipaConsulting", "_blank");
   }
   const buttonStyle = {
     display: "flex",
