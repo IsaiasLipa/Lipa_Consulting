@@ -69,7 +69,7 @@ const Card_contact = (props) => {
                 <div style={iconStyle}>
                   
                 </div>
-                {props.language ? <a>Text our Whatsapp</a> : <a>Contactanos en Whatsapp</a>}
+                {props.language ? <p>Text our Whatsapp</p> : <p>Contactanos en Whatsapp</p>}
               </Button>
               <br/>
               <Button
@@ -80,7 +80,7 @@ const Card_contact = (props) => {
                 <div style={iconStyle}>
                   
                 </div>
-                {props.language ? <a>See our Facebook</a> : <a>Ve nuestro Facebook</a>}
+                {props.language ? <p>See our Facebook</p> : <p>Ve nuestro Facebook</p>}
               </Button>
             </Col>
           </Row>
