@@ -23,9 +23,9 @@ const Card_contact = (props) => {
       <Card.Body>
         <Card.Title>
           {props.language ? (
-            <a>Contact Information</a>
+            <p>Contact Information</p>
           ) : (
-            <a>Informaccion de contacto</a>
+            <p>Informaccion de contacto</p>
           )}
         </Card.Title>
         <Card.Text>
@@ -33,11 +33,12 @@ const Card_contact = (props) => {
             <Col xs={12} md={4}>
               <div className="image_container">
                 <iframe
+                  title="map"
                   className="image_card"
                   loading="lazy"
                   allowfullscreen
                   src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMU_YV4Ix6IkRga32gFWLtLc&key=AIzaSyDNZz8yYz_OQYhCfWpgQbM0aiazLBNFEik"
-                ></iframe>
+                />
               </div>
             </Col>
             <Col xs={12} md={8}>
