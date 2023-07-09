@@ -8,7 +8,9 @@ const Card_contact = (props) => {
   const openFacebook = () => {
     window.open("https://www.facebook.com/LipaConsulting", "_blank");
   }
-
+  const openInstagram= () => {
+    window.open("https://www.instagram.com/lipaconsulting", "_black");
+  }
   
   return (
     <Card className="m-4">
@@ -53,6 +55,7 @@ const Card_contact = (props) => {
                   </p>
                 </div>
               )}
+
               <Button
                 variant="outline-success"
                 onClick={openWhatsapp}
@@ -74,6 +77,29 @@ const Card_contact = (props) => {
               </Button>
               <br />
               <Button
+                variant="outline-dark"
+                onClick={openInstagram}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "5px",
+                  textAlign: "center",
+                  borderColor: "#E4405F",
+                  color: "#E4405F",
+                }}
+              >
+                <i class="fa-brands fa-instagram"></i>
+
+                <span>
+                  {props.language
+                    ? "See our Instagram"
+                    : "Ve nuestro Instagram"}
+                </span>
+              </Button>
+
+              <br />
+              <Button
                 variant="outline-primary"
                 onClick={openFacebook}
                 style={{
@@ -86,11 +112,8 @@ const Card_contact = (props) => {
               >
                 <i class="fa-brands fa-facebook"></i>
                 <span>
-                  {props.language
-                    ? "See our Facebook"
-                    : "Ve nuestro Facebook"}
+                  {props.language ? "See our Facebook" : "Ve nuestro Facebook"}
                 </span>
-                
               </Button>
             </Col>
           </Row>
